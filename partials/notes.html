@@ -1,0 +1,19 @@
+<h1>Your Notes</h1>
+    <!-- TODO: Repeat over our todo list notes and setup filtering by search term. Easy peasy -->
+    <div ng-repeat="note in notes">
+      <div class="panel panel-default">
+        <div class="panel-body clearfix">
+          <!-- every note has own unique route/url w id enables get from db -->
+          <div class="col-xs-7"><a ng-href="#/notes/{{note.id}}"></a><p>{{note.content}}</p></div>
+          <div class="col-xs-2"><p>{{note.date | date: 'medium'}}</p></div>
+          <div class="btn-group pull-right">
+          <!-- <a class="btn btn-danger"  ng-click="editNote()">Edit</a> -->
+          <a class="btn btn-danger"  ng-click="removeNote(note.id)"> X </a>
+        
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+    

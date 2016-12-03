@@ -1,0 +1,5 @@
+.DS_Store 
+lib/node_modules 
+.sass-cache
+lib/bower_components
+app/values/fb-creds.js
